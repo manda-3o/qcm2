@@ -1,0 +1,122 @@
+fichier complet et code du projet
+
+00:28
+
+8 fichiers créés
+8 fichiers créés
+
+DAO QCMDAO
+QCMDAO.java
+
+DAO ExamenDAO
+ExamenDAO.java
+
+Servlet DashboardServlet
+DashboardServlet.java
+
+Servlet EtudiantServlet
+EtudiantServlet.java
+
+Servlet QCMServlet
+QCMServlet.java
+
+Servlet NiveauServlet
+NiveauServlet.java
+
+Servlet ExamenServlet avec gestion session examen
+ExamenServlet.java
+
+Servlet ClassementServlet
+ClassementServlet.java
+Terminé
+Maintenant les vues JSP :
+
+
+15 fichiers créés, exécuté 2 commandes, lu un fichier
+15 fichiers créés, exécuté 2 commandes, lu un fichier
+
+layout header JSP include
+header.jsp
+
+layout footer JSP include
+footer.jsp
+
+CSS principal
+style.css
+
+JavaScript app.js
+app.js
+
+index.jsp redirect
+index.jsp
+
+Vue dashboard.jsp
+dashboard.jsp
+
+Vue etudiants list.jsp
+list.jsp
+
+Vue niveaux.jsp
+niveaux.jsp
+
+Vue QCM list.jsp
+list.jsp
+
+Vue examen list.jsp (notes)
+list.jsp
+
+Vue examen start.jsp
+start.jsp
+
+Vue examen run.jsp (question en cours)
+run.jsp
+
+Vue examen result.jsp (récap avant enregistrement)
+result.jsp
+
+Vue examen mail.jsp (email simulé)
+mail.jsp
+
+Vue classement list.jsp
+list.jsp
+
+List all files created
+
+Script
+
+Package the full project as ZIP
+
+Script
+
+Presented file
+Terminé
+Le projet complet est prêt. Voici le récapitulatif de tous les 32 fichiers créés :
+
+Structure MVC complète :
+
+gestionqcm/
+├── pom.xml
+├── sql/schema.sql
+└── src/main/
+    ├── java/com/gestionqcm/
+    │   ├── model/        Etudiant.java · QCM.java · Examen.java
+    │   ├── dao/          EtudiantDAO.java · QCMDAO.java · ExamenDAO.java
+    │   ├── servlet/      DashboardServlet · EtudiantServlet · QCMServlet
+    │   │                 NiveauServlet · ExamenServlet · ClassementServlet
+    │   └── util/         DBConnection.java · EncodingFilter.java
+    └── webapp/
+        ├── WEB-INF/      web.xml · header.jsp · footer.jsp
+        ├── css/style.css · js/app.js · index.jsp
+        └── views/
+            ├── dashboard.jsp
+            ├── etudiant/   list.jsp · niveaux.jsp
+            ├── qcm/        list.jsp
+            ├── examen/     start.jsp · run.jsp · result.jsp · mail.jsp · list.jsp
+            └── classement/ list.jsp
+Pour démarrer :
+
+Importer le ZIP dans Eclipse/IntelliJ comme projet Maven
+Exécuter sql/schema.sql dans MySQL
+Modifier DBConnection.java avec votre mot de passe MySQL
+Déployer sur Apache Tomcat 9+
+Ouvrir http://localhost:8080/gestion-qcm/
